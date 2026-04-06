@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+// TYPOGRAPHY
+
+$base-font-family: neue-haas-grotesk-text, Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$display-font-family: neue-haas-grotesk-display, Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$contact-font-family: "auto-pro-2-new", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+$base-font-size:   2rem !default;
+$small-font-size:  $base-font-size * 0.6 !default;
+$large-font-size:  3.4vw !default;
+$xlarge-font-size:  6.2vw !default;
+
+$base-font-weight:   400 !default;
+$medium-font-weight: 500 !default;
+$bold-font-weight:   700 !default;
+
+$base-line-height:  1.5 !default;
+$tight-line-height: 96% !default;
+
+$table-text-align: left !default;
+
+
+// SPACING
+
+$spacing-unit:         .75rem !default;
+$large-spacing-unit:   $spacing-unit * 2 !default;
+$xlarge-spacing-unit:  $spacing-unit * 6 !default;
+
+
+//
+// COLOURS
+//
+
+//old defaults
+$text-color:       hsl(0, 0%, 5%) !default;
+$brand-color:      $text-color !default;
+$grey-color:       hsl(0, 0%, 41%) !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+
+//home
+$background-color-home:   hsl(30, 100%, 60%);
+
+$background-gradient-home:
+radial-gradient(
+  farthest-side at 120% 20%,
+  hsl(20, 90%, 48%) 0%, $background-color-home 80%,
+  transparent),
+radial-gradient(
+  farthest-corner at -10% 120%,
+  hsl(30, 100%, 57%) 0%, $background-color-home 100%,
+  transparent);
+
+$text-color-home:       hsl(243, 41%, 4%) !default;
+$link-color-home:       hsl(18, 86%, 11%) !default;
+$link-color-home-hover: hsl(0, 0%, 0%) !default;
+$border-color-home:     hsla(18, 86%, 11%, .8) !default;
+
+
+//cv
+$background-color-cv:   hsl(0, 0%, 94%) !default;
+$background-gradient-cv:  radial-gradient(farthest-side at 95% 70%, #f7bdb2 15%, #efefef 85%) !default;
+
+$text-color-cv:       hsl(0, 0%, 5%) !default;
+$header-color-cv:     hsla(246, 70%, 13%, 0.65) !default;
+$company-color:       hsl(245, 38%, 11%) !default;
+$job-title-color:     hsla(244, 70%, 13%, 0.78) !default;
+$job-time-color:      hsl(13, 71%, 47%) !default;
+
+$link-color-cv:       hsl(13, 71%, 47%) !default;
+$link-color-cv-hover: hsl(13, 98%, 36%) !default;
+$item-border-color:   hsla(244, 70%, 11%, 0.22) !default;
+$border-color-cv:     hsla(8, 50%, 50%, 0.6) !default;
+
+
+//work
+$background-color-work:   hsl(0, 0%, 3%) !default;
+$background-gradient-work:  radial-gradient(farthest-side at 95% 70%, hsl(215, 34%, 14%) 15%, hsl(0, 0%, 3%) 85%) !default;
+
+$text-color-work:       hsl(0, 0%, 80%) !default;
+$link-color-work:       hsl(234, 16%, 87%) !default;
+$link-color-work-hover: hsl(0, 0%, 100%) !default;
+$border-color-work:     hsla(0, 0%, 100%, 0.215) !default;
+
+
+//contact
+$background-color-contact:   hsl(213, 77%, 60%) !default;
+$background-gradient-contact:
+radial-gradient(
+  farthest-side at 120% 20%,
+  hsl(205, 60%, 59%) 0%, $background-color-contact 80%,
+  transparent),
+radial-gradient(
+  farthest-corner at -10% 120%,
+  hsl(192, 100%, 58%) 0%, $background-color-contact 100%,
+  transparent);
+
+$text-color-contact:      hsl(218, 74%, 91%) !default;
+$link-color-contact:      hsl(224, 84%, 17%) !default;
+$link-color-contact-hover:hsl(218, 44%, 11%) !default;
+$border-color-contact:    hsla(249, 74%, 10%, 0.4) !default;
+$text-shadow-contact:    hsla(249, 74%, 10%, 0.2) !default;
+
+
+//play
+$background-color-play:   #ea603a !default;
+$background-gradient-play:  linear-gradient(-45deg, #e75b35, #d25735, #ff8d58) !default;
+
+$text-color-play:       hsl(0, 0%, 5%) !default;
+$link-color-play:       #4f1100 !default;
+$link-color-play-hover: #4f1100 !default;
+$border-color-play:     hsla(0, 0%, 100%, 0.4) !default;
+
+
+
+// Width of the content area
+$content-width:    100vw !default;
+
+$on-palm:          95vw !default;
+$on-laptop:        100vw !default;
+$small-screen:     65vw !default;
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+
+
+// Import partials.
+@import
+  "custom/normalize",
+  "minima/base",
+  "custom/main",
+  "custom/menu"
+;

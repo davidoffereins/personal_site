@@ -1,0 +1,14 @@
+<footer class="site-footer">
+  <div class="wrapper">
+    <div>
+      <span>© 2024 David Offereins</span>
+    </div>
+    <div class="footer-links">
+      {% if page.url == "/contact/" %}
+        <div><a href="{{ '/' | relative_url }}">Home</a></div>
+      {% else %}
+        <div><a href="{{ '/contact/' | relative_url }}">Contact</a></div>
+      {% endif %}     
+    </div>
+  </div>
+</footer>

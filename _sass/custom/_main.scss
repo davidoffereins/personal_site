@@ -1,0 +1,536 @@
+
+/*-----------------------------------*\
+  GENERAL
+\*-----------------------------------*/
+
+body {
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
+
+  animation: colorChange 15s infinite alternate linear;
+  justify-content: space-between;
+
+  //
+  // Different colors for pages
+  //
+  
+  &.home {
+    background-color: $background-color-home;
+    background: $background-gradient-home;
+    color: $text-color-home;
+    #menu-toggle:checked ~ .menu {
+      background: $background-color-home;
+    }
+    .svg-icon, a.page-link, .site-footer, .site-footer a {
+      fill: $link-color-home;
+      color: $link-color-home;
+    }
+    .menu-button, .menu-button::before, .menu-button::after {
+      background-color:  $link-color-home;
+    }
+    a {
+      color: $link-color-home;
+      &:visited {
+        color: $link-color-home;
+      }  
+      &:hover {
+        color: $link-color-home-hover;
+      }
+    }
+    .site-header .wrapper {
+      border-bottom: 1px solid $border-color-home;
+    }
+    .site-footer .wrapper {
+      border-top: 1px solid $border-color-home;
+    }
+  }
+
+  &.work {
+    background-color: $background-color-work;
+    background: $background-gradient-work;
+    color: $text-color-work;
+    #menu-toggle:checked ~ .menu {
+      background: $background-color-work;
+    }
+    .svg-icon, a.page-link, .site-footer, .site-footer a {
+      fill: $link-color-work;
+      color: $link-color-work;
+    }
+    .menu-button, .menu-button::before, .menu-button::after {
+      background-color:  $link-color-work;
+    }
+    a {
+      color: $link-color-work;
+      &:visited {
+        color: $link-color-work;
+      }  
+      &:hover {
+        color: $link-color-work-hover;
+      }
+    }
+    .site-header .wrapper {
+      border-bottom: 1px solid $border-color-work;
+    }
+    .site-footer .wrapper {
+      border-top: 1px solid $border-color-work;
+    }
+  }
+
+  &.cv {
+    background-color: $background-color-cv;
+    background: $background-gradient-cv;
+    color: $text-color-cv;
+
+    .cv.wrapper {
+      h2 {
+        color: $header-color-cv;
+      } 
+      .item {
+        border-top: 1px solid $item-border-color;
+        .time {
+          color: $job-time-color;
+        }
+        .company {
+          color: $company-color;
+        }
+        .job-title {
+          color: $job-title-color;
+        }
+      }
+    }
+    #menu-toggle:checked ~ .menu {
+      background: $background-color-cv;
+    }
+    .svg-icon, a.page-link, .site-footer, .site-footer a {
+      fill: $link-color-cv;
+      color: $link-color-cv;
+    }
+    .menu-button, .menu-button::before, .menu-button::after {
+      background-color:  $link-color-cv;
+    }
+    a {
+      color: $link-color-cv;
+      &:visited {
+        color: $link-color-cv;
+      }  
+      &:hover {
+        color: $link-color-cv-hover;
+      }
+    }
+    .site-header .wrapper {
+      border-bottom: 1px solid $border-color-cv;
+    }
+    .site-footer .wrapper {
+      border-top: 1px solid $border-color-cv;
+    }
+  }
+
+  &.contact {
+    background-color: $background-color-contact;
+    background: $background-gradient-contact;
+    color: $text-color-contact;
+
+    #contact-info a {
+      color: $text-color-contact;
+      &:hover {
+        color: hsl(216, 100%, 95%);
+      }
+    }
+
+    #menu-toggle:checked ~ .menu {
+      background: $background-color-contact;
+    }
+    .svg-icon, a.page-link, .site-footer, .site-footer a {
+      fill: $link-color-contact;
+      color: $link-color-contact;
+    }
+    .menu-button, .menu-button::before, .menu-button::after {
+      background-color:  $link-color-contact;
+    }
+    .site-header .wrapper {
+      border-bottom: 1px solid $border-color-contact;
+    }
+    .site-footer .wrapper {
+      border-top: 1px solid $border-color-contact;
+    }
+  }
+
+  &.play {
+    background-color: $background-color-play;
+    background: $background-gradient-play;
+    color: $text-color-play;
+    #menu-toggle:checked ~ .menu {
+      background: $background-color-play;
+    }
+    .svg-icon, a.page-link, .site-footer, .site-footer a {
+      fill: $link-color-play;
+      color: $link-color-play;
+    }
+    .menu-button, .menu-button::before, .menu-button::after {
+      background-color:  $link-color-play;
+    }
+    .site-header .wrapper {
+      border-bottom: 1px solid $border-color-play;
+    }
+    .site-footer .wrapper {
+      border-top: 1px solid $border-color-play;
+    }
+  }
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.page-content {
+  flex: 1 0 auto;
+}
+
+.site-header,
+.site-footer {
+  flex: 0 0 auto;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: $spacing-unit 2%;
+    border: 0;
+    vertical-align: baseline;
+    z-index: 1000;
+  }
+}
+
+.site-header {
+  .wrapper {
+    font-size: 4vw;
+    font-weight: $bold-font-weight;
+    font-size: 1.6vw;
+
+    //vertical align home icon
+    > div > a {
+      display: flex;
+    }
+
+    .svg-icon {
+      width: 2.2vw;
+      height: 2.2vw;
+      padding: 4px;
+    }
+
+    a.page-link {
+      margin-left: $large-spacing-unit;
+    }
+  }
+}
+
+.site-footer {
+
+  .wrapper {
+    font-size: 1rem;
+    font-weight: $medium-font-weight;
+
+    div.footer-links {
+      display: flex;
+      align-items: center;
+
+      .svg-icon {
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+
+      a {
+        display: flex;
+        margin-left: $large-spacing-unit;
+      }
+    }
+  }
+}
+
+/*-----------------------------------*\
+  HOME
+\*-----------------------------------*/
+
+body.home {
+
+  .page-content p {
+    font-size: 6.2vw;
+    font-family: $display-font-family;
+    font-weight: $bold-font-weight;
+    line-height: $tight-line-height;
+    letter-spacing: -0.02em;
+    color: $text-color-home;
+    &:not(:last-child) {
+      margin-bottom: 0.6em;
+    }
+  }
+}
+
+.home-portrait {
+  width: 5vw;
+  height: 5vw;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  border-radius: 2.5vw;
+  position: relative;
+  top: 0.25vw;
+}
+
+/*-----------------------------------*\
+  WORK
+\*-----------------------------------*/
+
+img.portfolio-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 2%;
+  aspect-ratio: auto 2560 / 1440;
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 2%;
+  }
+}
+
+
+/*-----------------------------------*\
+  CV
+\*-----------------------------------*/
+
+.cv.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 70vw;
+  padding: $xlarge-spacing-unit 2%;
+
+  div.section:not(:first-child) {
+    margin-top: $xlarge-spacing-unit;
+  }
+
+  div {
+    h2 {
+      font-size: 1.6vw;
+      font-weight: $medium-font-weight;
+    }
+    .item {
+      display: flex;
+      flex-direction: column;
+      margin-top: $spacing-unit;
+      padding-top: $spacing-unit;
+      .time {
+        font-size: 1.2vw;
+        text-transform: uppercase;
+        font-weight: $medium-font-weight;
+        padding-bottom: 0.4vw;
+      }
+      .company {
+        font-weight: $bold-font-weight;
+        font-size:3.4vw;
+        line-height: $tight-line-height;
+      }
+      .job-title {
+        font-size: 1.6vw;
+      }
+    }
+  }
+}
+
+
+/*-----------------------------------*\
+  CONTACT
+\*-----------------------------------*/
+
+body.contact .page-content {
+  display: flex;
+  // align-items: center;
+  text-align: center;
+  // font-family: $contact-font-family;
+  font-weight: 500;
+  // font-style: italic;
+  line-height: 1;
+  // line-height: $tight-line-height;
+  font-size: $large-font-size;
+  margin-top: 16vh;
+  text-shadow: .1vw .1vw .12vw $text-shadow-contact;
+
+  #contact-info {
+    margin-top: $large-spacing-unit;
+    a {
+      color: $text-color-contact;
+      line-height: $base-line-height;
+      &:hover {
+        color: hsl(216, 100%, 95%);
+      }
+    }
+  }
+}
+
+
+/*-----------------------------------*\
+  MEDIA QUERIES
+\*-----------------------------------*/
+@media screen and (max-width: 88rem) {
+  body.contact .page-content {
+    font-size: 4.6vw;
+  }
+}
+
+@media screen and (max-width: 70rem) {
+
+  .site-header {
+    .wrapper {
+      font-size: 1.2rem;
+
+      .svg-icon {
+        width: 1.6rem;
+        height: 1.6rem;
+        padding: 4px;
+      }
+  
+      a.page-link {
+        margin-left: $spacing-unit;
+      }
+    }
+  }
+
+  .site-footer {
+    .wrapper {
+      font-size: .8rem;
+  
+      div.footer-links a {
+        margin-left: $spacing-unit;
+      }
+    }
+  }
+
+  .home-portrait {
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 1.8rem;
+    position: relative;
+    top: 0.25rem;
+    z-index: 1;
+  }
+
+  .cv.wrapper {
+    max-width: 90%;
+    padding: 8vh 2%;
+  
+    div.section:not(:first-child) {
+      margin-top: $xlarge-spacing-unit;
+    }
+  
+    div {
+      h2 {
+        font-size: 0.8rem;
+      }
+  
+      .item {
+  
+        .time {
+          font-size: 0.8rem;
+          padding-bottom: 0.1rem;
+        }
+        .company {
+          font-size:2rem;
+        }
+        .job-title {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 48rem) {
+
+  body.home {
+    .page-content p,
+    .page-content #contact-info a {
+      font-size: 6.8vw;
+    }
+  }
+
+  .cv.wrapper {
+    max-width: 100%;
+  }
+
+  body.contact .page-content {
+    font-size: 7.2vw;
+    text-shadow: 1px 1px 2px $border-color-contact;
+  }
+}
+
+@media screen and (max-width: 30rem) {
+
+  body.home {
+    .page-content p,
+    .page-content #contact-info a {
+      font-size: 7.8vw;
+      line-height: 100%;
+    }
+  }
+
+  .home-portrait {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+    top: 0.25rem;
+  }
+
+  .cv.wrapper {
+
+    div {
+      h2 {
+        font-size: 0.8rem;
+      }
+  
+      .item {
+  
+        .time {
+          font-size: 0.8rem;
+          padding-bottom: 0.1rem;
+        }
+        .company {
+          font-size:1.6rem;
+        }
+        .job-title {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@keyframes colorChange {
+  from { /* radial-gradient(farthest-corner at top right, ..) */
+    background-position:left top;
+    background-size:200% 100%;
+  
+  }
+  49.9% {
+    background-position:left top;  
+  }
+  50% { /* radial-gradient(farthest-corner at top center, ..) */
+    background-size:100% 100%;
+  }
+  50.1% {
+    background-position:right bottom; 
+  }
+  to { /* radial-gradient(farthest-corner at top left, ..) */
+    background-position:right bottom;
+    background-size:200% 100%;
+  }
+ }
