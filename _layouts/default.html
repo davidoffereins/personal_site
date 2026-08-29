@@ -1,19 +1,9 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: "nl" }}">
 
   {%- include head.html -%}
 
-    {% if page.url == "/" %}
-      <body class="home">
-    {% elsif page.url == "/work/" %}
-      <body class="work">
-    {% elsif page.url == "/cv/" %}
-      <body class="cv">
-    {% elsif page.url == "/contact/" %}
-      <body class="contact">
-    {% else %}
-      <body>
-    {% endif %} 
+    <body class="{{ page.layout }} lang-nl">
 
     {%- include header.html -%}
 

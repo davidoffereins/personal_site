@@ -10,6 +10,11 @@ body {
   animation: colorChange 15s infinite alternate linear;
   justify-content: space-between;
 
+  &.lang-nl [data-lang="en"],
+  &.lang-en [data-lang="nl"] {
+    display: none !important;
+  }
+
   //
   // Different colors for pages
   //
@@ -155,6 +160,28 @@ body {
     }
   }
 
+  &.about {
+    background-color: $background-color-home;
+    background: $background-gradient-home;
+    color: $text-color-home;
+    #menu-toggle:checked ~ .menu {
+      background: $background-color-home;
+    }
+    .svg-icon, a.page-link, .site-footer, .site-footer a {
+      fill: $link-color-home;
+      color: $link-color-home;
+    }
+    .menu-button, .menu-button::before, .menu-button::after {
+      background-color: $link-color-home;
+    }
+    .site-header .wrapper {
+      border-bottom: 1px solid $border-color-home;
+    }
+    .site-footer .wrapper {
+      border-top: 1px solid $border-color-home;
+    }
+  }
+
   &.play {
     background-color: $background-color-play;
     background: $background-gradient-play;
@@ -226,6 +253,30 @@ body {
 
     a.page-link {
       margin-left: $large-spacing-unit;
+    }
+
+    .language-switch {
+      display: inline-flex;
+      gap: .25em;
+      align-items: baseline;
+      margin-left: $large-spacing-unit;
+
+      button {
+        appearance: none;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        color: inherit;
+        font: inherit;
+        cursor: pointer;
+        opacity: .45;
+
+        &[aria-pressed="true"],
+        &:hover,
+        &:focus-visible {
+          opacity: 1;
+        }
+      }
     }
   }
 }
@@ -300,6 +351,109 @@ img.portfolio-img {
 
   &:not(:last-child) {
     margin-bottom: 2%;
+  }
+}
+
+.work-intro,
+.case-copy,
+.archive-heading {
+  max-width: 70vw;
+  margin: 0 auto;
+}
+
+.work-intro {
+  padding: 8vh 0 10vh;
+
+  p {
+    max-width: 18ch;
+    font-family: $display-font-family;
+    font-size: 4.8vw;
+    font-weight: $bold-font-weight;
+    line-height: $tight-line-height;
+    letter-spacing: -.02em;
+  }
+}
+
+.case-summary {
+  margin-bottom: 14vh;
+
+  .case-copy {
+    padding: 4vh 0 0;
+  }
+
+  h1 {
+    max-width: 18ch;
+    margin: 0 0 .4em;
+    font-family: $display-font-family;
+    font-size: 4.8vw;
+    font-weight: $bold-font-weight;
+    line-height: $tight-line-height;
+    letter-spacing: -.02em;
+  }
+
+  p {
+    max-width: 42em;
+    font-size: 1.5rem;
+    line-height: 1.35;
+  }
+
+  .case-meta,
+  .case-status {
+    font-size: 1rem;
+    font-weight: $medium-font-weight;
+  }
+
+  .case-meta {
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    opacity: .7;
+  }
+
+  .case-status {
+    margin-top: 1.5rem;
+    opacity: .6;
+  }
+}
+
+.archive-heading {
+  padding: 2vh 0 4vh;
+
+  h2 {
+    font-size: 1rem;
+    font-weight: $medium-font-weight;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    opacity: .7;
+  }
+}
+
+/*-----------------------------------*\
+  ABOUT / NOW
+\*-----------------------------------*/
+
+.about-page {
+  max-width: 86vw;
+  margin: 0 auto;
+  padding: 7vh 0 12vh;
+
+  p {
+    max-width: 30em;
+    font-size: 2.2vw;
+    line-height: 1.25;
+
+    &:not(:last-child) {
+      margin-bottom: 1.4em;
+    }
+  }
+
+  .about-lead {
+    max-width: 21ch;
+    font-family: $display-font-family;
+    font-size: 5.8vw;
+    font-weight: $bold-font-weight;
+    line-height: $tight-line-height;
+    letter-spacing: -.02em;
   }
 }
 
@@ -402,6 +556,10 @@ body.contact .page-content {
       a.page-link {
         margin-left: $spacing-unit;
       }
+
+      .language-switch {
+        margin-left: $spacing-unit;
+      }
     }
   }
 
@@ -452,6 +610,29 @@ body.contact .page-content {
       }
     }
   }
+
+  .work-intro,
+  .case-copy,
+  .archive-heading {
+    max-width: 90%;
+  }
+
+  .work-intro p,
+  .case-summary h1 {
+    font-size: 3.6rem;
+  }
+
+  .about-page {
+    max-width: 90%;
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    .about-lead {
+      font-size: 3.8rem;
+    }
+  }
 }
 
 @media screen and (max-width: 48rem) {
@@ -470,6 +651,28 @@ body.contact .page-content {
   body.contact .page-content {
     font-size: 7.2vw;
     text-shadow: 1px 1px 2px $border-color-contact;
+  }
+
+  .work-intro {
+    padding: 4vh 0 7vh;
+  }
+
+  .work-intro p,
+  .case-summary h1,
+  .about-page .about-lead {
+    font-size: 9vw;
+  }
+
+  .case-summary {
+    margin-bottom: 9vh;
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
+
+  .about-page p {
+    font-size: 1.2rem;
   }
 }
 

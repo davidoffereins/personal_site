@@ -17,3 +17,30 @@ window.addEventListener('resize', () => {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
   });
+
+const setLanguage = (language) => {
+    const selectedLanguage = language === 'en' ? 'en' : 'nl';
+    document.body.classList.toggle('lang-nl', selectedLanguage === 'nl');
+    document.body.classList.toggle('lang-en', selectedLanguage === 'en');
+    document.documentElement.setAttribute('lang', selectedLanguage);
+    document.querySelectorAll('[data-lang-choice]').forEach((button) => {
+        button.setAttribute('aria-pressed', button.dataset.langChoice === selectedLanguage ? 'true' : 'false');
+    });
+    try {
+        window.localStorage.setItem('preferred-language', selectedLanguage);
+    } catch (error) {
+        // The switch still works when storage is unavailable.
+    }
+};
+
+let preferredLanguage = 'nl';
+try {
+    preferredLanguage = window.localStorage.getItem('preferred-language') || 'nl';
+} catch (error) {
+    preferredLanguage = 'nl';
+}
+setLanguage(preferredLanguage);
+
+document.querySelectorAll('[data-lang-choice]').forEach((button) => {
+    button.addEventListener('click', () => setLanguage(button.dataset.langChoice));
+});
