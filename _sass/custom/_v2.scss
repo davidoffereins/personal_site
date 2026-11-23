@@ -99,7 +99,7 @@ body {
 a:hover .arrow { transform: translateX(.3em); }
 a:hover .arrow:first-child { transform: translateX(-.3em); }
 
-a { text-decoration: none; }
+a, a:hover, a:focus, a:active { text-decoration: none; }
 .case a.inline-link, .cv .job-title a {
   background: linear-gradient(currentColor, currentColor) 0 100% / 100% .06em no-repeat;
   transition: background-size .35s ease;
@@ -187,7 +187,7 @@ img.portfolio-img { display: block; }
     font-family: $condensed-font-family;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 15.5vw;
+    font-size: 14.4vw;
     line-height: .86;
     letter-spacing: -0.01em;
     color: #fff;
@@ -322,7 +322,7 @@ figcaption {
     .project-more { padding-top: 2vw; }
     .project-text { padding-top: 3vw; }
   }
-  .case-intro { padding: 10vw 0 8vw; h1 { font-size: 19vw; } }
+  .case-intro { padding: 10vw 0 8vw; h1 { font-size: 14.4vw; } }
   .case-lead { font-size: 6.4vw; }
   .case-text { grid-template-columns: 1fr; padding: 14vw 0 9vw; .case-label { margin-bottom: 4vw; padding-top: 2vw; } }
   .case-statement { font-size: 8.4vw !important; }
