@@ -16,21 +16,17 @@
         <div class='menu-button'></div>
       </label>
       <ul class="menu">
-        <li class="home"><a class="page-link" href="{{ '/' | relative_url }}"><span data-lang="nl">Home</span><span data-lang="en">Home</span></a></li>
+        <li class="home"><a class="page-link" href="{{ '/' | relative_url }}">Home</a></li>
         {%- for path in page_paths -%}
           {%- assign my_page = site.pages | where: "path", path | first -%}
           {%- if my_page.title -%}
-            <li><a class="page-link" href="{{ my_page.url | relative_url }}"><span data-lang="nl">{{ my_page.title_nl | default: my_page.title | escape }}</span><span data-lang="en">{{ my_page.title | escape }}</span></a></li>
+            <li><a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
           {%- endif -%}
         {%- endfor -%}
-        <li class="language-switch" aria-label="Language">
-          <button type="button" data-lang-choice="nl" aria-pressed="true">NL</button>
-          <span aria-hidden="true">/</span>
-          <button type="button" data-lang-choice="en" aria-pressed="false">EN</button>
-        </li>
       </ul>
   
     {%- endif -%}
 
   </div>
 </header>
+

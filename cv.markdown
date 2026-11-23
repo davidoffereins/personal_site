@@ -1,6 +1,6 @@
 ---
 layout: cv
-title: CV
-title_nl: CV
+title: Curriculum Vitae
 permalink: /cv/
 ---
+
