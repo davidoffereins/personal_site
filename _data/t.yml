@@ -1,0 +1,241 @@
+# Alle teksten van de site, per taal. Pas hier tekst aan; de opmaak staat in _layouts.
+
+en:
+  prefix: ""
+  nav: { work: "Work", bus: "Bus", cv: "Curriculum Vitae", contact: "Contact", home: "Home" }
+  home:
+    p1a: "I'm David"
+    p1b: ". I design brands, digital products & print media."
+    p2a: "I create thoughtful, effective design. Usually by diving in head first, reading, researching, sketching, making sense of complex data, mastering new tools if needed. And obsessing over details at the end. Check out some past projects "
+    p2link: "here"
+    p3a: "These days I also drive a bus. "
+    p3link: "Here's why"
+  work:
+    read: "Read the story"
+    cybersprint_meta: "2017—2022 · Brand identity & product design"
+    madebyu_meta: "Identity & campaign"
+    khh_meta: "Identity, campaign & website"
+    basetide_meta: "Naming & brand identity"
+    basetide_text: "A new name and identity for a database consultancy. Base for the stable foundation, tide for the changing flow of data. Eight letters on a grid, and lighthouses as guides."
+    pier_meta: "Concept, identity & copy"
+    pier_text: "First brand concept for the reopening of the pier in Scheveningen. The shapes come from maritime signal flags, the colours from my own photos of beach, sea and sky."
+  case:
+    meta: "2017—2022 · Designer, later Creative Director"
+    lead: "Cybersprint mapped everything an organisation has exposed to the internet. Also the things nobody knew were there. I came in to draw a new logo and stayed to design the brand and the product."
+    product_label: "The product"
+    product_1: "The start was a table: a list of assets, a risk score for each, and the details. The question was how a security team sees at a glance how big the problem is and what to do first."
+    product_2: "I brought it down to three levels. A dashboard with the biggest risks and a top ten of actions. A list of all assets. And a page for every single asset. I designed it and built most of the first frontend myself, in HTML and CSS, together with the backend developer."
+    first_caption: "The first version."
+    later_caption: "A few years later: dashboard, asset detail and Workbench."
+    wb_label: "Workbench"
+    wb_statement: "One screen to ask a difficult question of a lot of data."
+    wb_prompt: "Query"
+    wb_queries: ["risk score D or worse", "running outdated software", "new this week, not yet assigned", "hit by today's vulnerability"]
+    wb_1: "The Workbench grew out of an idea of founder Pieter and me. You type a query and the asset list filters while you type: on risk score, vulnerability, software in use, or a combination. A question you need more often you save, so it is there the next time. The result can be exported to work with."
+    wb_2: "It also changed how Cybersprint helped its customers. When a new vulnerability made the news, we could send a ready-made query. The customer opened it and saw right away which of their own systems were hit."
+    wb_caption: "Query on top. Saved questions on the left. The filtered assets below."
+    net_label: "The network"
+    net_1: "Later we added a 3D view of the whole attack surface. Every dot is an asset you can click, linked to the list and the detail page."
+    story_label: "The story"
+    story_1: "A company thinks its attack surface has a certain size. In reality it is much bigger. And you can't defend what you don't know. I built this in 3D, in Blender, so the story could be told in a few images."
+    story_captions: ["What a company thinks it has.", "Looking further.", "What is really there.", "And where an attack comes in."]
+    brand_label: "The brand"
+    brand_1: "No hackers in hoodies, no green binary code. Black, red and white, strong type, and an aerial photo of Barcelona that reads as a circuit board until you spot the cars."
+    brand_2: "The same line ran through the product, the website, the info sheets, the trade show stand and the office. A small company that looked like a big one."
+    after_label: "After"
+    after_1: "Cybersprint grew from a handful of people to about 65 and was acquired by Darktrace in 2022. I stayed on for a year as senior UX/UI designer."
+    back: "All work"
+  bus:
+    title: "The bus"
+    lead: "After years behind a screen I took a detour. I drive a bus in the north of the Netherlands."
+    p:
+      - "It is a good break from all the screen work. No pixels, no meetings. A big windscreen, a timetable and people who need to be somewhere."
+      - "The early shifts come with sunrises I would otherwise sleep through. These are some of them."
+      - "I like the work. But I miss the puzzle, people from the same trade and room for ideas. So I'm looking for a place to design again."
+    cta: "Get in touch"
+  cv:
+    work_title: "Work experience"
+    edu_title: "Education"
+    skills_title: "Skills"
+    work:
+      - { time: "Now", company: "Qbuzz", role: "Bus driver", link: "bus", linktext: "Why" }
+      - { time: "2023—present", company: "Independent designer", role: "AI projects: apps and prototypes, designed and built with AI" }
+      - { time: "2022—2023", company: "Darktrace", role: "Senior UX/UI designer" }
+      - { time: "2018—2022", company: "Cybersprint", role: "Creative Director. Brand identity and product design.", link: "case", linktext: "Read more" }
+      - { time: "2012—2018", company: "Freelance designer", role: "Brand & digital design" }
+      - { time: "2012", company: "Vesper", role: "Designer" }
+      - { time: "2009—2012", company: "De Wijde Blik Communicatieadvies", role: "Designer" }
+      - { time: "2006—2009", company: "Noordelijke Ontwikkelingsmaatschappij", role: "Information manager" }
+      - { time: "2006", company: "Bureau Bartels", role: "Junior Consultant" }
+    edu:
+      - { time: "2009—2013", company: "BA Graphic Design", role: "Royal Academy of Art, The Hague" }
+      - { time: "2004—2006", company: "MSc Economic Geography", role: "Rijksuniversiteit Groningen, Groningen" }
+      - { time: "2000—2004", company: "BSc Human Geography", role: "Rijksuniversiteit Groningen, Groningen" }
+    skills:
+      - { time: "General", role: "Brand design, UX/UI design, Graphic design, Datavisualization, Statistics, Typography, Copywriting, Illustration, Photography, Videography, 3D-animation" }
+      - { time: "Software", role: "Figma, Photoshop, InDesign, Illustrator, XD, Premiere Pro, After Effects, Blender, Sketch" }
+      - { time: "Development", role: "HTML, CSS/SCSS/LESS, Git version control, basic Javascript, basic Vue.js, building with AI" }
+      - { time: "Languages", role: "Fluent in Dutch, English and German" }
+  contact:
+    line1: "I am always looking for interesting projects,"
+    line2: "so feel free to get in touch!"
+
+nl:
+  prefix: "/nl"
+  nav: { work: "Werk", bus: "Bus", cv: "Curriculum Vitae", contact: "Contact", home: "Home" }
+  home:
+    p1a: "Ik ben David"
+    p1b: ". Ik ontwerp merken, digitale producten & drukwerk."
+    p2a: "Ik maak doordacht ontwerp dat werkt. Meestal door er vol in te duiken: lezen, onderzoeken, schetsen, wijs worden uit complexe data en nieuwe tools leren als dat nodig is. En aan het eind eindeloos schaven aan de details. Eerder werk staat "
+    p2link: "hier"
+    p3a: "Tegenwoordig rijd ik ook op de bus. "
+    p3link: "Hierom"
+  work:
+    read: "Lees het verhaal"
+    cybersprint_meta: "2017—2022 · Merkidentiteit & productontwerp"
+    madebyu_meta: "Identiteit & campagne"
+    khh_meta: "Identiteit, campagne & website"
+    basetide_meta: "Naam & merkidentiteit"
+    basetide_text: "Een nieuwe naam en identiteit voor een databaseconsultancy. Base voor de stabiele basis, tide voor de wisselende stroom data. Acht letters op een grid, en vuurtorens als gids."
+    pier_meta: "Concept, identiteit & tekst"
+    pier_text: "Eerste merkconcept voor de heropening van de Pier in Scheveningen. De vormen komen van maritieme seinvlaggen, de kleuren uit mijn eigen foto's van strand, zee en lucht."
+  case:
+    meta: "2017—2022 · Ontwerper, later Creative Director"
+    lead: "Cybersprint bracht in kaart wat een organisatie allemaal aan het internet heeft hangen. Ook de dingen waarvan niemand meer wist dat ze er waren. Ik kwam binnen voor een nieuw logo en bleef om het merk en het product te ontwerpen."
+    product_label: "Het product"
+    product_1: "Het begin was een tabel: een lijst assets, per asset een risicoscore, en de details. De vraag was hoe een securityteam in één oogopslag ziet hoe groot het probleem is en wat het eerst moet."
+    product_2: "Ik bracht het terug tot drie niveaus. Een dashboard met de grootste risico's en een top tien van acties. Een lijst met alle assets. En een pagina per asset. Ik ontwierp het en bouwde het grootste deel van de eerste frontend zelf, in HTML en CSS, samen met de backenddeveloper."
+    first_caption: "De eerste versie."
+    later_caption: "Een paar jaar later: dashboard, assetdetail en Workbench."
+    wb_label: "Workbench"
+    wb_statement: "Eén scherm om een moeilijke vraag te stellen aan heel veel data."
+    wb_prompt: "Query"
+    wb_queries: ["risicoscore D of slechter", "draait verouderde software", "nieuw deze week, nog niet toegewezen", "geraakt door de kwetsbaarheid van vandaag"]
+    wb_1: "De Workbench kwam voort uit een idee van oprichter Pieter en mij. Je typt een zoekvraag en de lijst met assets filtert terwijl je typt: op risicoscore, kwetsbaarheid, gebruikte software, of een combinatie. Een vraag die je vaker nodig hebt bewaar je, zodat hij er de volgende keer gewoon staat. Het resultaat kun je exporteren om mee aan de slag te gaan."
+    wb_2: "Het veranderde ook hoe Cybersprint klanten kon helpen. Kwam er een nieuwe kwetsbaarheid in het nieuws, dan stuurden we een kant-en-klare zoekvraag. De klant opende hem en zag meteen welke eigen systemen geraakt waren."
+    wb_caption: "Zoekvraag bovenin. Bewaarde vragen links. De gefilterde assets eronder."
+    net_label: "Het netwerk"
+    net_1: "Later kwam er een 3D-weergave van de hele attack surface bij. Elke stip is een asset waar je op kunt klikken, gekoppeld aan de lijst en de detailpagina."
+    story_label: "Het verhaal"
+    story_1: "Een bedrijf denkt dat zijn attack surface een bepaalde omvang heeft. In werkelijkheid is die veel groter. En wat je niet kent, kun je niet verdedigen. Ik bouwde dit in 3D, in Blender, zodat het verhaal in een paar beelden te vertellen was."
+    story_captions: ["Wat een bedrijf denkt te hebben.", "Verder kijken.", "Wat er werkelijk is.", "En waar een aanval binnenkomt."]
+    brand_label: "Het merk"
+    brand_1: "Geen hackers in hoodies, geen groene enen en nullen. Zwart, rood en wit, stevige typografie, en een luchtfoto van Barcelona die eruitziet als een printplaat tot je de auto's ziet."
+    brand_2: "Dezelfde lijn liep door het product, de website, de infosheets, de beursstand en het kantoor. Een klein bedrijf dat eruitzag als een groot."
+    after_label: "Daarna"
+    after_1: "Cybersprint groeide van een handvol mensen naar ongeveer 65 en werd in 2022 overgenomen door Darktrace. Ik bleef nog een jaar als senior UX/UI-ontwerper."
+    back: "Al het werk"
+  bus:
+    title: "De bus"
+    lead: "Na jaren achter een beeldscherm nam ik een omweg. Ik rijd op de bus in Noord-Nederland."
+    p:
+      - "Het is een mooie pauze van al het beeldschermwerk. Geen pixels, geen vergaderingen. Een grote voorruit, een dienstregeling en mensen die ergens heen moeten."
+      - "Bij de vroege diensten horen zonsopgangen waar ik anders doorheen zou slapen. Dit zijn er een paar."
+      - "Ik vind het werk leuk. Maar ik mis de puzzel, vakgenoten en ruimte voor ideeën. Dus ik zoek weer een plek om te ontwerpen."
+    cta: "Neem contact op"
+  cv:
+    work_title: "Werkervaring"
+    edu_title: "Opleiding"
+    skills_title: "Vaardigheden"
+    work:
+      - { time: "Nu", company: "Qbuzz", role: "Buschauffeur", link: "bus", linktext: "Waarom" }
+      - { time: "2023—nu", company: "Zelfstandig ontwerper", role: "AI-projecten: apps en prototypes, ontworpen en gebouwd met AI" }
+      - { time: "2022—2023", company: "Darktrace", role: "Senior UX/UI-ontwerper" }
+      - { time: "2018—2022", company: "Cybersprint", role: "Creative Director. Merkidentiteit en productontwerp.", link: "case", linktext: "Lees meer" }
+      - { time: "2012—2018", company: "Zelfstandig ontwerper", role: "Merk- & digitaal ontwerp" }
+      - { time: "2012", company: "Vesper", role: "Ontwerper" }
+      - { time: "2009—2012", company: "De Wijde Blik Communicatieadvies", role: "Ontwerper" }
+      - { time: "2006—2009", company: "Noordelijke Ontwikkelingsmaatschappij", role: "Informatiemanager" }
+      - { time: "2006", company: "Bureau Bartels", role: "Junior adviseur" }
+    edu:
+      - { time: "2009—2013", company: "BA Grafisch Ontwerpen", role: "Koninklijke Academie van Beeldende Kunsten, Den Haag" }
+      - { time: "2004—2006", company: "MSc Economische Geografie", role: "Rijksuniversiteit Groningen" }
+      - { time: "2000—2004", company: "BSc Sociale Geografie", role: "Rijksuniversiteit Groningen" }
+    skills:
+      - { time: "Algemeen", role: "Merkontwerp, UX/UI-ontwerp, grafisch ontwerp, datavisualisatie, statistiek, typografie, tekst, illustratie, fotografie, video, 3D-animatie" }
+      - { time: "Software", role: "Figma, Photoshop, InDesign, Illustrator, XD, Premiere Pro, After Effects, Blender, Sketch" }
+      - { time: "Development", role: "HTML, CSS/SCSS/LESS, Git-versiebeheer, basis Javascript, basis Vue.js, bouwen met AI" }
+      - { time: "Talen", role: "Vloeiend Nederlands, Engels en Duits" }
+  contact:
+    line1: "Ik ben altijd op zoek naar interessante projecten,"
+    line2: "dus neem gerust contact op!"
+
+de:
+  prefix: "/de"
+  nav: { work: "Arbeiten", bus: "Bus", cv: "Lebenslauf", contact: "Kontakt", home: "Home" }
+  home:
+    p1a: "Ich bin David"
+    p1b: ". Ich gestalte Marken, digitale Produkte & Printmedien."
+    p2a: "Ich mache durchdachtes Design, das funktioniert. Meistens, indem ich kopfüber eintauche: lesen, recherchieren, skizzieren, komplexe Daten verstehen und mir neue Werkzeuge aneignen, wenn es nötig ist. Und am Ende lange an den Details feilen. Frühere Projekte gibt es "
+    p2link: "hier"
+    p3a: "Zurzeit fahre ich auch Bus. "
+    p3link: "Warum"
+  work:
+    read: "Zur Geschichte"
+    cybersprint_meta: "2017—2022 · Markenidentität & Produktdesign"
+    madebyu_meta: "Identität & Kampagne"
+    khh_meta: "Identität, Kampagne & Website"
+    basetide_meta: "Name & Markenidentität"
+    basetide_text: "Ein neuer Name und eine neue Identität für eine Datenbankberatung. Base für das stabile Fundament, tide für den wechselnden Datenstrom. Acht Buchstaben im Raster, und Leuchttürme als Wegweiser."
+    pier_meta: "Konzept, Identität & Text"
+    pier_text: "Erstes Markenkonzept für die Wiedereröffnung der Pier in Scheveningen. Die Formen stammen von maritimen Signalflaggen, die Farben aus meinen eigenen Fotos von Strand, Meer und Himmel."
+  case:
+    meta: "2017—2022 · Designer, später Creative Director"
+    lead: "Cybersprint machte sichtbar, was eine Organisation alles am Internet hängen hat. Auch das, wovon niemand mehr wusste. Ich kam für ein neues Logo und blieb, um die Marke und das Produkt zu gestalten."
+    product_label: "Das Produkt"
+    product_1: "Am Anfang stand eine Tabelle: eine Liste von Assets, je Asset ein Risikowert, und die Details. Die Frage war, wie ein Security-Team auf einen Blick sieht, wie groß das Problem ist und was zuerst zu tun ist."
+    product_2: "Ich habe es auf drei Ebenen gebracht. Ein Dashboard mit den größten Risiken und einer Top Ten der Maßnahmen. Eine Liste aller Assets. Und eine Seite je Asset. Ich habe es gestaltet und den größten Teil des ersten Frontends selbst gebaut, in HTML und CSS, zusammen mit dem Backend-Entwickler."
+    first_caption: "Die erste Version."
+    later_caption: "Ein paar Jahre später: Dashboard, Asset-Detail und Workbench."
+    wb_label: "Workbench"
+    wb_statement: "Ein Bildschirm, um sehr vielen Daten eine schwierige Frage zu stellen."
+    wb_prompt: "Query"
+    wb_queries: ["Risikowert D oder schlechter", "läuft mit veralteter Software", "neu diese Woche, noch nicht zugewiesen", "betroffen von der Schwachstelle von heute"]
+    wb_1: "Die Workbench entstand aus einer Idee von Gründer Pieter und mir. Man tippt eine Abfrage, und die Asset-Liste filtert beim Tippen: nach Risikowert, Schwachstelle, eingesetzter Software oder einer Kombination. Eine Frage, die man öfter braucht, speichert man, dann steht sie beim nächsten Mal bereit. Das Ergebnis lässt sich exportieren, um damit weiterzuarbeiten."
+    wb_2: "Sie veränderte auch, wie Cybersprint seinen Kunden helfen konnte. Kam eine neue Schwachstelle in die Nachrichten, schickten wir eine fertige Abfrage. Der Kunde öffnete sie und sah sofort, welche eigenen Systeme betroffen waren."
+    wb_caption: "Oben die Abfrage. Links die gespeicherten Fragen. Darunter die gefilterten Assets."
+    net_label: "Das Netzwerk"
+    net_1: "Später kam eine 3D-Ansicht der gesamten Angriffsfläche dazu. Jeder Punkt ist ein Asset, das man anklicken kann, verbunden mit der Liste und der Detailseite."
+    story_label: "Die Geschichte"
+    story_1: "Ein Unternehmen glaubt, seine Angriffsfläche habe eine bestimmte Größe. In Wirklichkeit ist sie viel größer. Und was man nicht kennt, kann man nicht verteidigen. Ich habe das in 3D gebaut, in Blender, damit sich die Geschichte in wenigen Bildern erzählen lässt."
+    story_captions: ["Was ein Unternehmen zu haben glaubt.", "Weiter schauen.", "Was wirklich da ist.", "Und wo ein Angriff hereinkommt."]
+    brand_label: "Die Marke"
+    brand_1: "Keine Hacker im Kapuzenpulli, kein grüner Binärcode. Schwarz, Rot und Weiß, kräftige Typografie, und ein Luftbild von Barcelona, das wie eine Leiterplatte aussieht, bis man die Autos entdeckt."
+    brand_2: "Dieselbe Linie zog sich durch das Produkt, die Website, die Infoblätter, den Messestand und das Büro. Ein kleines Unternehmen, das wie ein großes aussah."
+    after_label: "Danach"
+    after_1: "Cybersprint wuchs von einer Handvoll Leute auf etwa 65 und wurde 2022 von Darktrace übernommen. Ich blieb noch ein Jahr als Senior UX/UI Designer."
+    back: "Alle Arbeiten"
+  bus:
+    title: "Der Bus"
+    lead: "Nach Jahren vor dem Bildschirm habe ich einen Umweg genommen. Ich fahre Bus im Norden der Niederlande."
+    p:
+      - "Es ist eine gute Pause von der ganzen Bildschirmarbeit. Keine Pixel, keine Meetings. Eine große Windschutzscheibe, ein Fahrplan und Menschen, die irgendwohin müssen."
+      - "Zu den Frühdiensten gehören Sonnenaufgänge, die ich sonst verschlafen würde. Das sind einige davon."
+      - "Die Arbeit macht mir Spaß. Aber mir fehlen das Tüfteln, Leute vom Fach und Raum für Ideen. Deshalb suche ich wieder einen Ort zum Gestalten."
+    cta: "Kontakt aufnehmen"
+  cv:
+    work_title: "Berufserfahrung"
+    edu_title: "Ausbildung"
+    skills_title: "Kenntnisse"
+    work:
+      - { time: "Jetzt", company: "Qbuzz", role: "Busfahrer", link: "bus", linktext: "Warum" }
+      - { time: "2023—heute", company: "Selbstständiger Designer", role: "KI-Projekte: Apps und Prototypen, mit KI gestaltet und gebaut" }
+      - { time: "2022—2023", company: "Darktrace", role: "Senior UX/UI Designer" }
+      - { time: "2018—2022", company: "Cybersprint", role: "Creative Director. Markenidentität und Produktdesign.", link: "case", linktext: "Mehr lesen" }
+      - { time: "2012—2018", company: "Freiberuflicher Designer", role: "Marken- & Digitaldesign" }
+      - { time: "2012", company: "Vesper", role: "Designer" }
+      - { time: "2009—2012", company: "De Wijde Blik Communicatieadvies", role: "Designer" }
+      - { time: "2006—2009", company: "Noordelijke Ontwikkelingsmaatschappij", role: "Informationsmanager" }
+      - { time: "2006", company: "Bureau Bartels", role: "Junior Consultant" }
+    edu:
+      - { time: "2009—2013", company: "BA Grafikdesign", role: "Königliche Akademie der Bildenden Künste, Den Haag" }
+      - { time: "2004—2006", company: "MSc Wirtschaftsgeografie", role: "Rijksuniversiteit Groningen" }
+      - { time: "2000—2004", company: "BSc Humangeografie", role: "Rijksuniversiteit Groningen" }
+    skills:
+      - { time: "Allgemein", role: "Markendesign, UX/UI-Design, Grafikdesign, Datenvisualisierung, Statistik, Typografie, Text, Illustration, Fotografie, Video, 3D-Animation" }
+      - { time: "Software", role: "Figma, Photoshop, InDesign, Illustrator, XD, Premiere Pro, After Effects, Blender, Sketch" }
+      - { time: "Development", role: "HTML, CSS/SCSS/LESS, Git, Grundkenntnisse Javascript und Vue.js, Bauen mit KI" }
+      - { time: "Sprachen", role: "Fließend Niederländisch, Englisch und Deutsch" }
+  contact:
+    line1: "Ich bin immer auf der Suche nach interessanten Projekten,"
+    line2: "also melden Sie sich gern!"

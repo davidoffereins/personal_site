@@ -28,7 +28,6 @@ url: "https://davidoffereins.com" # the base hostname & protocol for your site, 
 # github_username:  davidoffereins
 linkedin_username:  davidoffereins
 
-google_analytics: "G-8V4MVHWMQN"
 
 # Build settings
 theme: minima
@@ -60,3 +59,7 @@ defaults:
       path: "assets/img/portfolio"
     values:
       image: true
+  - scope:
+      path: "assets/img/bus"
+    values:
+      busphoto: true

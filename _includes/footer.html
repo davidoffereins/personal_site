@@ -1,14 +1,16 @@
+{%- assign lang = page.lang | default: "en" -%}
+{%- assign t = site.data.t[lang] -%}
 <footer class="site-footer">
   <div class="wrapper">
     <div>
-      <span>© 2024 David Offereins</span>
+      <span>© {{ 'now' | date: '%Y' }} David Offereins</span>
     </div>
     <div class="footer-links">
-      {% if page.url == "/contact/" %}
-        <div><a href="{{ '/' | relative_url }}">Home</a></div>
+      {% if page.key == "contact" %}
+        <div><a href="{{ t.prefix }}/">{{ t.nav.home }}</a></div>
       {% else %}
-        <div><a href="{{ '/contact/' | relative_url }}">Contact</a></div>
-      {% endif %}     
+        <div><a href="{{ t.prefix }}/contact/">{{ t.nav.contact }}</a></div>
+      {% endif %}
     </div>
   </div>
 </footer>

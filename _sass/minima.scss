@@ -2,9 +2,9 @@
 
 // TYPOGRAPHY
 
-$base-font-family: neue-haas-grotesk-text, Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$display-font-family: neue-haas-grotesk-display, Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$contact-font-family: "auto-pro-2-new", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$base-font-family: var(--sans) !default;
+$display-font-family: var(--sans) !default;
+$contact-font-family: var(--sans) !default;
 
 $base-font-size:   2rem !default;
 $small-font-size:  $base-font-size * 0.6 !default;
@@ -132,5 +132,6 @@ $small-screen:     65vw !default;
   "custom/normalize",
   "minima/base",
   "custom/main",
-  "custom/menu"
+  "custom/menu",
+  "custom/v2"
 ;

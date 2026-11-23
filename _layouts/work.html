@@ -1,15 +1,53 @@
 ---
 layout: default
 ---
-
+{%- assign t = site.data.t[page.lang] -%}
+{%- assign p = '/assets/img/portfolio/' | relative_url -%}
 <div class="work">
- 
-    {% assign image_files = site.static_files | where: "image", true %}
 
-    {% for myimage in image_files %}
-        <img loading="lazy" class="portfolio-img size-XL" src="{{ myimage.path | relative_url }}" alt="" width="2560" height="1440">
-    {% endfor %}
-    
+    <section class="project">
+        <a class="project-head" href="{{ t.prefix }}/work/cybersprint/">
+            <span class="project-meta">{{ t.work.cybersprint_meta }}</span>
+            <span class="project-name">Cybersprint</span>
+            <span class="project-more">{{ t.work.read }} <span class="arrow">&rarr;</span></span>
+        </a>
+        <a href="{{ t.prefix }}/work/cybersprint/" tabindex="-1"><img class="portfolio-img reveal" src="{{ p }}01_Cybersprint-A01.jpg" alt="Cybersprint: logo, dashboard, info sheets" width="2560" height="1440"></a>
+        <img loading="lazy" class="portfolio-img reveal" src="{{ p }}02_Cybersprint_A01.jpg" alt="Cybersprint: product screens, brand imagery" width="2560" height="1440">
+        <img loading="lazy" class="portfolio-img reveal" src="{{ p }}03_Cybersprint_A01.jpg" alt="Cybersprint: brochure, website, network view" width="2560" height="1440">
+    </section>
+
+    <section class="project">
+        <div class="project-head">
+            <span class="project-meta">{{ t.work.madebyu_meta }}</span>
+            <span class="project-name">Made by U</span>
+        </div>
+        <img loading="lazy" class="portfolio-img reveal" src="{{ p }}04_MadebyU_A01.jpg" alt="Made by U: logos, posters, billboard" width="2560" height="1440">
+    </section>
+
+    <section class="project">
+        <div class="project-head">
+            <span class="project-meta">{{ t.work.khh_meta }}</span>
+            <span class="project-name">Klushuis Haarlem</span>
+        </div>
+        <img loading="lazy" class="portfolio-img reveal" src="{{ p }}05_KhH_A01.jpg" alt="Klushuis Haarlem: logo, posters, website" width="2560" height="1440">
+    </section>
+
+    <section class="project">
+        <div class="project-head">
+            <span class="project-meta">{{ t.work.basetide_meta }}</span>
+            <span class="project-name">Basetide</span>
+            <span class="project-text">{{ t.work.basetide_text }}</span>
+        </div>
+        <img loading="lazy" class="portfolio-img reveal" src="{{ p }}06_Basetide_A01.jpg" alt="Basetide: logo, business cards, website, product sheets" width="2560" height="1440">
+    </section>
+
+    <section class="project">
+        <div class="project-head">
+            <span class="project-meta">{{ t.work.pier_meta }}</span>
+            <span class="project-name">De Pier</span>
+            <span class="project-text">{{ t.work.pier_text }}</span>
+        </div>
+        <img loading="lazy" class="portfolio-img reveal" src="{{ p }}07_Pier_A01.jpg" alt="De Pier: logo, flags, website, brand book" width="2560" height="1440">
+    </section>
+
 </div>
-
-
