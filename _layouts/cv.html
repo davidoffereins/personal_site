@@ -9,7 +9,7 @@ layout: default
         <div class="item reveal">
             <div class="time">{{ i.time }}</div>
             <div class="company">{{ i.company }}</div>
-            <div class="job-title">{{ i.role }}{% if i.link == 'bus' %} <a href="{{ t.prefix }}/bus/">{{ i.linktext }} &rarr;</a>{% elsif i.link == 'case' %} <a href="{{ t.prefix }}/work/cybersprint/">{{ i.linktext }} &rarr;</a>{% endif %}</div>
+            <div class="job-title">{{ i.role }}{% if i.link == 'case' %} <a href="{{ t.prefix }}/work/cybersprint/">{{ i.linktext }} &rarr;</a>{% endif %}</div>
         </div>
         {%- endfor %}
     </div>

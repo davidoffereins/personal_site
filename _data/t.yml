@@ -2,14 +2,12 @@
 
 en:
   prefix: ""
-  nav: { work: "Work", bus: "Bus", cv: "Curriculum Vitae", contact: "Contact", home: "Home" }
+  nav: { work: "Work", cv: "Curriculum Vitae", contact: "Contact", home: "Home" }
   home:
     p1a: "I'm David"
     p1b: ". I design brands, digital products & print media."
     p2a: "I create thoughtful, effective design. Usually by diving in head first, reading, researching, sketching, making sense of complex data, mastering new tools if needed. And obsessing over details at the end. Check out some past projects "
     p2link: "here"
-    p3a: "These days I also drive a bus. "
-    p3link: "Here's why"
   work:
     read: "Read the story"
     cybersprint_meta: "2017—2022 · Brand identity & product design"
@@ -45,20 +43,12 @@ en:
     after_label: "After"
     after_1: "Cybersprint grew from a handful of people to about 65 and was acquired by Darktrace in 2022. I stayed on for a year as senior UX/UI designer."
     back: "All work"
-  bus:
-    title: "The bus"
-    lead: "After years behind a screen I took a detour. I drive a bus in the north of the Netherlands."
-    p:
-      - "It is a good break from all the screen work. No pixels, no meetings. A big windscreen, a timetable and people who need to be somewhere."
-      - "The early shifts come with sunrises I would otherwise sleep through. These are some of them."
-      - "I like the work. But I miss the puzzle, people from the same trade and room for ideas. So I'm looking for a place to design again."
-    cta: "Get in touch"
   cv:
     work_title: "Work experience"
     edu_title: "Education"
     skills_title: "Skills"
     work:
-      - { time: "Now", company: "Qbuzz", role: "Bus driver", link: "bus", linktext: "Why" }
+      - { time: "Now", company: "Qbuzz", role: "Bus driver" }
       - { time: "2023—present", company: "Independent designer", role: "AI projects: apps and prototypes, designed and built with AI" }
       - { time: "2022—2023", company: "Darktrace", role: "Senior UX/UI designer" }
       - { time: "2018—2022", company: "Cybersprint", role: "Creative Director. Brand identity and product design.", link: "case", linktext: "Read more" }
@@ -82,14 +72,12 @@ en:
 
 nl:
   prefix: "/nl"
-  nav: { work: "Werk", bus: "Bus", cv: "Curriculum Vitae", contact: "Contact", home: "Home" }
+  nav: { work: "Werk", cv: "Curriculum Vitae", contact: "Contact", home: "Home" }
   home:
     p1a: "Ik ben David"
     p1b: ". Ik ontwerp merken, digitale producten & drukwerk."
     p2a: "Ik maak doordacht ontwerp dat werkt. Meestal door er vol in te duiken: lezen, onderzoeken, schetsen, wijs worden uit complexe data en nieuwe tools leren als dat nodig is. En aan het eind eindeloos schaven aan de details. Eerder werk staat "
     p2link: "hier"
-    p3a: "Tegenwoordig rijd ik ook op de bus. "
-    p3link: "Hierom"
   work:
     read: "Lees het verhaal"
     cybersprint_meta: "2017—2022 · Merkidentiteit & productontwerp"
@@ -125,20 +113,12 @@ nl:
     after_label: "Daarna"
     after_1: "Cybersprint groeide van een handvol mensen naar ongeveer 65 en werd in 2022 overgenomen door Darktrace. Ik bleef nog een jaar als senior UX/UI-ontwerper."
     back: "Al het werk"
-  bus:
-    title: "De bus"
-    lead: "Na jaren achter een beeldscherm nam ik een omweg. Ik rijd op de bus in Noord-Nederland."
-    p:
-      - "Het is een mooie pauze van al het beeldschermwerk. Geen pixels, geen vergaderingen. Een grote voorruit, een dienstregeling en mensen die ergens heen moeten."
-      - "Bij de vroege diensten horen zonsopgangen waar ik anders doorheen zou slapen. Dit zijn er een paar."
-      - "Ik vind het werk leuk. Maar ik mis de puzzel, vakgenoten en ruimte voor ideeën. Dus ik zoek weer een plek om te ontwerpen."
-    cta: "Neem contact op"
   cv:
     work_title: "Werkervaring"
     edu_title: "Opleiding"
     skills_title: "Vaardigheden"
     work:
-      - { time: "Nu", company: "Qbuzz", role: "Buschauffeur", link: "bus", linktext: "Waarom" }
+      - { time: "Nu", company: "Qbuzz", role: "Buschauffeur" }
       - { time: "2023—nu", company: "Zelfstandig ontwerper", role: "AI-projecten: apps en prototypes, ontworpen en gebouwd met AI" }
       - { time: "2022—2023", company: "Darktrace", role: "Senior UX/UI-ontwerper" }
       - { time: "2018—2022", company: "Cybersprint", role: "Creative Director. Merkidentiteit en productontwerp.", link: "case", linktext: "Lees meer" }
@@ -162,14 +142,12 @@ nl:
 
 de:
   prefix: "/de"
-  nav: { work: "Arbeiten", bus: "Bus", cv: "Lebenslauf", contact: "Kontakt", home: "Home" }
+  nav: { work: "Arbeiten", cv: "Lebenslauf", contact: "Kontakt", home: "Home" }
   home:
     p1a: "Ich bin David"
     p1b: ". Ich gestalte Marken, digitale Produkte & Printmedien."
     p2a: "Ich mache durchdachtes Design, das funktioniert. Meistens, indem ich kopfüber eintauche: lesen, recherchieren, skizzieren, komplexe Daten verstehen und mir neue Werkzeuge aneignen, wenn es nötig ist. Und am Ende lange an den Details feilen. Frühere Projekte gibt es "
     p2link: "hier"
-    p3a: "Zurzeit fahre ich auch Bus. "
-    p3link: "Warum"
   work:
     read: "Zur Geschichte"
     cybersprint_meta: "2017—2022 · Markenidentität & Produktdesign"
@@ -205,20 +183,12 @@ de:
     after_label: "Danach"
     after_1: "Cybersprint wuchs von einer Handvoll Leute auf etwa 65 und wurde 2022 von Darktrace übernommen. Ich blieb noch ein Jahr als Senior UX/UI Designer."
     back: "Alle Arbeiten"
-  bus:
-    title: "Der Bus"
-    lead: "Nach Jahren vor dem Bildschirm habe ich einen Umweg genommen. Ich fahre Bus im Norden der Niederlande."
-    p:
-      - "Es ist eine gute Pause von der ganzen Bildschirmarbeit. Keine Pixel, keine Meetings. Eine große Windschutzscheibe, ein Fahrplan und Menschen, die irgendwohin müssen."
-      - "Zu den Frühdiensten gehören Sonnenaufgänge, die ich sonst verschlafen würde. Das sind einige davon."
-      - "Die Arbeit macht mir Spaß. Aber mir fehlen das Tüfteln, Leute vom Fach und Raum für Ideen. Deshalb suche ich wieder einen Ort zum Gestalten."
-    cta: "Kontakt aufnehmen"
   cv:
     work_title: "Berufserfahrung"
     edu_title: "Ausbildung"
     skills_title: "Kenntnisse"
     work:
-      - { time: "Jetzt", company: "Qbuzz", role: "Busfahrer", link: "bus", linktext: "Warum" }
+      - { time: "Jetzt", company: "Qbuzz", role: "Busfahrer" }
       - { time: "2023—heute", company: "Selbstständiger Designer", role: "KI-Projekte: Apps und Prototypen, mit KI gestaltet und gebaut" }
       - { time: "2022—2023", company: "Darktrace", role: "Senior UX/UI Designer" }
       - { time: "2018—2022", company: "Cybersprint", role: "Creative Director. Markenidentität und Produktdesign.", link: "case", linktext: "Mehr lesen" }

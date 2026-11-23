@@ -3,7 +3,7 @@
   Bouwt voort op _main.scss (ontwerp 2024).
   Nieuw: eigen fonts (IBM Plex), bewegende
   kleurvlakken + pixelraster, projectkoppen,
-  Cybersprint-case, buspagina, taalkeuze.
+  Cybersprint-case, taalkeuze.
 \*-----------------------------------*/
 
 @font-face { font-family: "IBM Plex Sans"; src: url("/assets/fonts/IBMPlexSans-Regular.ttf") format("truetype"); font-weight: 400; font-display: swap; }
@@ -24,8 +24,8 @@ $cs-red: hsl(4, 82%, 50%);
 :root { --sans: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 :root.letter-inter {
   --sans: "InterVariable", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  body.home .page-content p, .project-head .project-name, .busstory h1 { letter-spacing: -0.042em; word-spacing: .03em; font-weight: 750; }
-  .case-lead, .case-statement, .busstory .bus-lead, .busstory .bus-text { letter-spacing: -0.045em; font-weight: 700; }
+  body.home .page-content p, .project-head .project-name { letter-spacing: -0.042em; word-spacing: .03em; font-weight: 750; }
+  .case-lead, .case-statement { letter-spacing: -0.045em; font-weight: 700; }
   .cv.wrapper div .item .company { letter-spacing: -0.045em; }
 }
 
@@ -42,12 +42,11 @@ body {
   --b1: hsl(14, 92%, 50%);
   --b2: hsl(44, 100%, 60%);
   --b3: hsl(350, 85%, 60%);
-  --dither: .5;
+ 
 
-  &.work { --bg: hsl(0, 0%, 3%); --b1: hsl(215, 40%, 17%); --b2: hsl(2, 70%, 16%); --b3: hsl(250, 35%, 13%); --dither: .35; }
-  &.cv { --bg: hsl(0, 0%, 94%); --b1: #f7bdb2; --b2: hsl(34, 90%, 86%); --b3: hsl(235, 45%, 90%); --dither: .6; }
+  &.work { --bg: hsl(0, 0%, 3%); --b1: hsl(215, 40%, 17%); --b2: hsl(2, 70%, 16%); --b3: hsl(250, 35%, 13%); }
+  &.cv { --bg: hsl(0, 0%, 94%); --b1: #f7bdb2; --b2: hsl(34, 90%, 86%); --b3: hsl(235, 45%, 90%); }
   &.contact { --bg: #{$background-color-contact}; --b1: hsl(192, 100%, 58%); --b2: hsl(232, 85%, 66%); --b3: hsl(170, 80%, 55%); }
-  &.bus { --bg: hsl(232, 48%, 17%); --b1: hsl(16, 92%, 56%); --b2: hsl(338, 62%, 46%); --b3: hsl(42, 96%, 62%); --dither: .4; }
 }
 
 .bg {
@@ -69,16 +68,6 @@ body {
   i:nth-child(1) { --c: var(--b1); right: -45vmax; top: -40vmax; animation: drift1 46s ease-in-out infinite alternate; }
   i:nth-child(2) { --c: var(--b2); left: -50vmax; bottom: -55vmax; animation: drift2 58s ease-in-out infinite alternate; }
   i:nth-child(3) { --c: var(--b3); left: 10vmax; top: 30vmax; width: 80vmax; height: 80vmax; opacity: .55; animation: drift3 71s ease-in-out infinite alternate; }
-
-  canvas.dither {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    image-rendering: pixelated;
-    mix-blend-mode: soft-light;
-    opacity: var(--dither);
-  }
 }
 
 @keyframes drift1 { from { transform: translate(0, 0) scale(1); } to { transform: translate(-55vmax, 35vmax) scale(1.25); } }
@@ -111,7 +100,7 @@ a:hover .arrow { transform: translateX(.3em); }
 a:hover .arrow:first-child { transform: translateX(-.3em); }
 
 a { text-decoration: none; }
-.case a.inline-link, .cv .job-title a, .bus-text a {
+.case a.inline-link, .cv .job-title a {
   background: linear-gradient(currentColor, currentColor) 0 100% / 100% .06em no-repeat;
   transition: background-size .35s ease;
   &:hover { background-size: 0 .06em; background-position: 100% 100%; }
@@ -303,52 +292,6 @@ figcaption {
 
 
 /*-----------------------------------*\
-  BUS
-\*-----------------------------------*/
-
-body.bus {
-  color: hsl(36, 100%, 94%);
-  #menu-toggle:checked ~ .menu { background: hsl(232, 48%, 17%); }
-  .svg-icon, a.page-link, .site-footer, .site-footer a { fill: hsl(36, 100%, 92%); color: hsl(36, 100%, 92%); }
-  .menu-button, .menu-button::before, .menu-button::after { background-color: hsl(36, 100%, 92%); }
-  a { color: #fff; }
-  .site-header .wrapper { border-bottom: 1px solid hsla(36, 100%, 92%, .3); }
-  .site-footer .wrapper { border-top: 1px solid hsla(36, 100%, 92%, .3); }
-}
-
-.busstory {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2vw;
-
-  > * { grid-column: 1 / -1; }
-
-  .bus-intro { padding: 6vw 0 4vw; }
-  h1 {
-    font-family: $display-font-family;
-    font-weight: $bold-font-weight;
-    font-size: 15.5vw;
-    line-height: .86;
-    letter-spacing: -0.05em;
-    margin: 0 0 3vw -0.05em;
-    color: #fff;
-  }
-  .bus-lead, .bus-text {
-    font-family: $display-font-family;
-    font-weight: $bold-font-weight;
-    font-size: 3.4vw;
-    line-height: 1.04;
-    letter-spacing: -0.03em;
-    max-width: 24em;
-    margin: 0;
-  }
-  .bus-text { padding: 5vw 0; }
-  .bus-photo { display: block; width: 100%; height: auto; margin: 0; }
-  .bus-photo.half { grid-column: auto; aspect-ratio: 4 / 5; object-fit: cover; height: 100%; }
-}
-
-
-/*-----------------------------------*\
   CV: kleine aanvullingen
 \*-----------------------------------*/
 
@@ -380,12 +323,11 @@ body.bus {
     .project-text { padding-top: 3vw; }
   }
   .case-intro { padding: 10vw 0 8vw; h1 { font-size: 19vw; } }
-  .case-lead, .busstory .bus-lead, .busstory .bus-text { font-size: 6.4vw; }
+  .case-lead { font-size: 6.4vw; }
   .case-text { grid-template-columns: 1fr; padding: 14vw 0 9vw; .case-label { margin-bottom: 4vw; padding-top: 2vw; } }
   .case-statement { font-size: 8.4vw !important; }
   .case-figure { margin-left: 0; }
   .case-first { max-width: 100%; }
   .query .query-prompt { padding: .9em .8em; margin-right: .8em; }
   .story .story-captions { grid-template-columns: 1fr 1fr; row-gap: 4vw; column-gap: 4vw; margin-top: 3vw; }
-  .busstory { gap: 3vw; h1 { font-size: 22vw; } .bus-text { padding: 9vw 0; } }
 }
