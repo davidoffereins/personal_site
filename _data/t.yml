@@ -5,51 +5,29 @@ en:
   nav: { work: "Work", cv: "Curriculum Vitae", contact: "Contact", home: "Home" }
   home:
     p1a: "I'm David"
-    p1b: ". I design brand identities and digital products."
-    p2a: "I like complicated subjects. Reading, digging, sketching, until it becomes clear."
-    p3a: "I enjoy learning new tools. Right now that is mostly AI: I use it to build my own apps and prototypes. Earlier work is "
+    p1b: ". I design brands, digital products & print media."
+    p2a: "I create thoughtful, effective design. Usually by diving in head first, reading, researching, sketching, making sense of complex data, mastering new tools if needed. And obsessing over details at the end."
+    p3a: "Lately those new tools are mostly AI, which I use to build my own apps and prototypes. Check out some past projects "
     p3link: "here"
   work:
-    read: "Read the story"
-    cybersprint_meta: "2017—2022 · Brand identity & product design"
+    cybersprint_meta: "2017—2022 · Creative Director"
+    cybersprint_text: "From the first sketches to the sale to Darktrace I was responsible for all design: the product, the brand, the website and the marketing material, right down to the trade show stand and the office."
     madebyu_meta: "Identity & campaign"
     khh_meta: "Identity, campaign & website"
     basetide_meta: "Naming & brand identity"
     basetide_text: "A new name and identity for a database consultancy. Base for the stable foundation, tide for the changing flow of data. Eight letters on a grid, and lighthouses as guides."
     pier_meta: "Concept, identity & copy"
     pier_text: "First brand concept for the reopening of the pier in Scheveningen. The shapes come from maritime signal flags, the colours from my own photos of beach, sea and sky."
-  case:
-    meta: "2017—2022 · Designer, later Creative Director"
-    lead: "Cybersprint showed organisations everything they had exposed to the internet. Including what they had forgotten. I came in for a logo and stayed for the brand and the product."
-    product_label: "The product"
-    product_1: "It started as a table full of assets and risk scores. I turned it into three levels: a dashboard with what to do first, a list of everything, and a page for each asset. I helped build the first version myself, in HTML and CSS."
-    first_caption: "The first version."
-    later_caption: "A few years later: dashboard, asset detail and Workbench."
-    wb_label: "Workbench"
-    wb_statement: "One screen to ask a difficult question of a lot of data."
-    wb_prompt: "Query"
-    wb_queries: ["risk score D or worse", "running outdated software", "new this week, not yet assigned", "hit by today's vulnerability"]
-    wb_1: "An idea of founder Pieter and me. You type a question and the list filters as you type. A question you ask more often, you save. When a new vulnerability made the news, we sent customers a ready-made question and they saw right away which of their systems were hit."
-    wb_caption: "Query on top. Saved questions on the left. The filtered assets below."
-    net_label: "The network"
-    net_1: "Later came a 3D map of the whole attack surface. Every dot is an asset. Click it and you are in the details."
-    story_label: "The story"
-    story_1: "A company thinks it knows what it has online. It is always more. I built that story in Blender, in four images."
-    story_captions: ["What a company thinks it has.", "Looking further.", "What is really there.", "And where an attack comes in."]
-    brand_label: "The brand"
-    brand_1: "No hackers in hoodies, no green ones and zeros. Black, red, white and sturdy type, from the product to the trade show stand. And an aerial photo of Barcelona that looks like a circuit board."
-    after_label: "After"
-    after_1: "Cybersprint grew to about 65 people and was acquired by Darktrace in 2022. I stayed for another year as senior UX/UI designer."
-    back: "All work"
   cv:
+    note: "I took on few design projects in recent years. I spent time at home with my kids, worked on our house and have been driving a bus for Qbuzz since September 2024. Alongside that I experiment and build a lot with AI."
     work_title: "Work experience"
     edu_title: "Education"
     skills_title: "Skills"
     work:
-      - { time: "Now", company: "Qbuzz", role: "Bus driver" }
+      - { time: "2024—present", company: "Qbuzz", role: "Bus driver" }
       - { time: "2023—present", company: "Independent designer", role: "AI projects: apps and prototypes, designed and built with AI" }
       - { time: "2022—2023", company: "Darktrace", role: "Senior UX/UI designer" }
-      - { time: "2018—2022", company: "Cybersprint", role: "Creative Director. Brand identity and product design.", link: "case", linktext: "Read more" }
+      - { time: "2018—2022", company: "Cybersprint", role: "Creative Director. Brand identity and product design." }
       - { time: "2012—2018", company: "Freelance designer", role: "Brand & digital design" }
       - { time: "2012", company: "Vesper", role: "Designer" }
       - { time: "2009—2012", company: "De Wijde Blik Communicatieadvies", role: "Designer" }
@@ -73,51 +51,29 @@ nl:
   nav: { work: "Werk", cv: "Curriculum Vitae", contact: "Contact", home: "Home" }
   home:
     p1a: "Ik ben David"
-    p1b: ". Ik ontwerp huisstijlen en digitale producten."
-    p2a: "Ik houd van ingewikkelde materie. Lezen, uitzoeken, schetsen, net zo lang tot het helder is."
-    p3a: "Nieuwe tools leer ik graag. Nu is dat vooral AI: daarmee bouw ik zelf apps en prototypes. Eerder werk staat "
+    p1b: ". Ik ontwerp huisstijlen, digitale producten en drukwerk."
+    p2a: "Het liefst iets waar ik mijn tanden in kan zetten. Dan duik ik erin: lezen, uitzoeken, schetsen, grip krijgen op ingewikkelde data. En daarna net zo lang schaven tot het klopt."
+    p3a: "De laatste tijd bouw ik veel met AI: eigen apps en prototypes. Eerder werk vind je "
     p3link: "hier"
   work:
-    read: "Lees het verhaal"
-    cybersprint_meta: "2017—2022 · Merkidentiteit & productontwerp"
+    cybersprint_meta: "2017—2022 · Creative Director"
+    cybersprint_text: "Van de eerste schetsen tot de verkoop aan Darktrace was ik verantwoordelijk voor al het ontwerp: het product, het merk, de website en het marketingmateriaal, tot en met de beursstand en het kantoor."
     madebyu_meta: "Identiteit & campagne"
     khh_meta: "Identiteit, campagne & website"
     basetide_meta: "Naam & merkidentiteit"
     basetide_text: "Een nieuwe naam en identiteit voor een databaseconsultancy. Base voor de stabiele basis, tide voor de wisselende stroom data. Acht letters op een grid, en vuurtorens als gids."
     pier_meta: "Concept, identiteit & tekst"
     pier_text: "Eerste merkconcept voor de heropening van de Pier in Scheveningen. De vormen komen van maritieme seinvlaggen, de kleuren uit mijn eigen foto's van strand, zee en lucht."
-  case:
-    meta: "2017—2022 · Ontwerper, later Creative Director"
-    lead: "Cybersprint liet organisaties zien wat ze allemaal aan het internet hadden hangen. Ook wat ze zelf vergeten waren. Ik kwam voor een logo en bleef voor het merk en het product."
-    product_label: "Het product"
-    product_1: "Het begon als een tabel vol assets en risicoscores. Ik maakte er drie niveaus van: een dashboard met wat het eerst moet, een lijst met alles, en een pagina per asset. De eerste versie bouwde ik zelf mee, in HTML en CSS."
-    first_caption: "De eerste versie."
-    later_caption: "Een paar jaar later: dashboard, assetdetail en Workbench."
-    wb_label: "Workbench"
-    wb_statement: "Eén scherm om een moeilijke vraag te stellen aan heel veel data."
-    wb_prompt: "Query"
-    wb_queries: ["risicoscore D of slechter", "draait verouderde software", "nieuw deze week, nog niet toegewezen", "geraakt door de kwetsbaarheid van vandaag"]
-    wb_1: "Een idee van oprichter Pieter en mij. Je typt een vraag en de lijst filtert mee terwijl je typt. Een vraag die je vaker stelt, bewaar je. Kwam er een nieuw lek in het nieuws, dan stuurden we klanten een kant-en-klare vraag en zagen zij meteen welke systemen geraakt waren."
-    wb_caption: "Zoekvraag bovenin. Bewaarde vragen links. De gefilterde assets eronder."
-    net_label: "Het netwerk"
-    net_1: "Later kwam er een 3D-kaart bij van de hele attack surface. Elke stip is een asset. Klik erop en je zit in de details."
-    story_label: "Het verhaal"
-    story_1: "Een bedrijf denkt te weten wat het online heeft staan. Het is altijd meer. Dat verhaal bouwde ik in Blender, in vier beelden."
-    story_captions: ["Wat een bedrijf denkt te hebben.", "Verder kijken.", "Wat er werkelijk is.", "En waar een aanval binnenkomt."]
-    brand_label: "Het merk"
-    brand_1: "Geen hackers in hoodies, geen groene enen en nullen. Zwart, rood, wit en stevige typografie, van het product tot de beursstand. En een luchtfoto van Barcelona die op een printplaat lijkt."
-    after_label: "Daarna"
-    after_1: "Cybersprint groeide naar zo'n 65 mensen en werd in 2022 overgenomen door Darktrace. Ik bleef nog een jaar als senior UX/UI-ontwerper."
-    back: "Al het werk"
   cv:
+    note: "De afgelopen jaren deed ik weinig ontwerpopdrachten. Ik was een tijd thuis bij de kinderen, kluste aan ons huis en rijd sinds september 2024 op de bus bij Qbuzz. Daarnaast experimenteer en bouw ik veel met AI."
     work_title: "Werkervaring"
     edu_title: "Opleiding"
     skills_title: "Vaardigheden"
     work:
-      - { time: "Nu", company: "Qbuzz", role: "Buschauffeur" }
+      - { time: "2024—nu", company: "Qbuzz", role: "Buschauffeur" }
       - { time: "2023—nu", company: "Zelfstandig ontwerper", role: "AI-projecten: apps en prototypes, ontworpen en gebouwd met AI" }
       - { time: "2022—2023", company: "Darktrace", role: "Senior UX/UI-ontwerper" }
-      - { time: "2018—2022", company: "Cybersprint", role: "Creative Director. Merkidentiteit en productontwerp.", link: "case", linktext: "Lees meer" }
+      - { time: "2018—2022", company: "Cybersprint", role: "Creative Director. Merkidentiteit en productontwerp." }
       - { time: "2012—2018", company: "Zelfstandig ontwerper", role: "Merk- & digitaal ontwerp" }
       - { time: "2012", company: "Vesper", role: "Ontwerper" }
       - { time: "2009—2012", company: "De Wijde Blik Communicatieadvies", role: "Ontwerper" }

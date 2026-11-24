@@ -295,6 +295,7 @@ figcaption {
   CV: kleine aanvullingen
 \*-----------------------------------*/
 
+.cv.wrapper .cv-note { max-width: 34em; font-size: 1.35rem; line-height: 1.35; margin: 0 0 3rem; }
 .cv.wrapper div .item .time { font-family: $mono-font-family; letter-spacing: .04em; }
 .cv.wrapper div h2 { font-family: $mono-font-family; text-transform: uppercase; letter-spacing: .06em; font-size: 1.2vw; }
 .cv.wrapper div .item .company { letter-spacing: -0.03em; }

@@ -3,18 +3,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
-  <script>
-    // Alleen voor de proef: ?letter=inter laadt Inter van rsms.me, ?letter=plex zet het terug.
-    (function () {
-      var p = new URLSearchParams(location.search).get('letter');
-      if (p) sessionStorage.setItem('letter', p);
-      if (sessionStorage.getItem('letter') === 'inter') {
-        document.documentElement.classList.add('letter-inter');
-        var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = 'https://rsms.me/inter/inter.css';
-        document.head.appendChild(l);
-      }
-    })();
-  </script>
   <link rel="preload" href="{{ '/assets/fonts/IBMPlexSans-Bold.ttf' | relative_url }}" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   {%- for l in site.data.t %}
